@@ -1,0 +1,64 @@
+body {
+    background: #3c4f57;
+    text-align: center;
+    font-family: Arial;
+    color: white;
+}
+
+.container {
+    margin-top: 180px;
+    position: relative;
+}
+
+h2 {
+    margin-top: 80px; 
+}
+
+.line {
+    height: 2px;
+    background: white;
+    width: 60%;
+    margin: 10px auto;
+}
+
+.queue {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.box {
+    width: 120px;
+    height: 60px;
+    border-radius: 5px;
+}
+
+.red { 
+    background: red;
+    position: relative;
+    top: -100px;
+}
+
+.green {
+    background: green;
+}
+
+.blue {
+    background: blue; 
+}
+
+.yellow {
+    background: yellow; 
+}
+
+.pink {
+    background: pink;
+}
+
+.violet {
+    background: violet;
+    position: absolute;
+    right: 15%;
+    bottom: -80px;
+}
