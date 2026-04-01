@@ -8,6 +8,8 @@ body {
 .container {
     margin-top: 180px;
     position: relative;
+    display: inline-block;
+    width: 100%;
 }
 
 h2 {
@@ -26,6 +28,7 @@ h2 {
     justify-content: center;
     gap: 15px;
     margin: 20px 0;
+    position: relative;
 }
 
 .box {
@@ -36,8 +39,6 @@ h2 {
 
 .red { 
     background: red;
-    position: relative;
-    top: -100px;
 }
 
 .green {
@@ -58,7 +59,37 @@ h2 {
 
 .violet {
     background: violet;
-    position: absolute;
-    right: 15%;
-    bottom: -80px;
 }
+
+.queue .box:first-child {
+    transform: translateY(-90px); 
+}
+
+.queue .box:last-child {
+    transform: translateY(90px); 
+}
+
+.controls {
+    margin-top: 150px; 
+    margin-bottom: 50px; 
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+}
+
+button {
+    padding: 10px 35px; 
+    font-size: 18px;  
+    font-weight: bold; 
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #3c4f57;
+    transition: 0.3s;  
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
